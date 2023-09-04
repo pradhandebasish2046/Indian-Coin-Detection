@@ -4,11 +4,11 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 
-__version__ = "0.0.0"
+__version__ = "1.0.0"
 
 REPO_NAME = "Indian-Coin-Detection"
 AUTHOR_USER_NAME = "Debasish"
-SRC_REPO = "Indian-Coin-Detection"
+SRC_REPO = "Indian_Coin_Detection"
 AUTHOR_EMAIL = "pradhandebasish2046@gmail.com"
 
 

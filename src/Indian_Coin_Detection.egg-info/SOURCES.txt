@@ -13,11 +13,3 @@ src/Indian_Coin_Detection/constants/__init__.py
 src/Indian_Coin_Detection/entity/__init__.py
 src/Indian_Coin_Detection/pipeline/__init__.py
 src/Indian_Coin_Detection/utils/__init__.py
-src/cnnClassifier/__init__.py
-src/cnnClassifier/components/__init__.py
-src/cnnClassifier/config/__init__.py
-src/cnnClassifier/config/configuration.py
-src/cnnClassifier/constants/__init__.py
-src/cnnClassifier/entity/__init__.py
-src/cnnClassifier/pipeline/__init__.py
-src/cnnClassifier/utils/__init__.py

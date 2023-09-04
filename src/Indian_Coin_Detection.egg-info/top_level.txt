@@ -1,2 +1,1 @@
 Indian_Coin_Detection
-cnnClassifier
