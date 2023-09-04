@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Indian-Coin-Detection
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/Debasish/Indian-Coin-Detection
+Author: Debasish
+Author-email: pradhandebasish2046@gmail.com
+Project-URL: Bug Tracker, https://github.com/Debasish/Indian-Coin-Detection/issues
+License-File: LICENSE
+
+# Indian-Coin-Detection
