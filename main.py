@@ -1,5 +1,7 @@
 from Indian_Coin_Detection import logger
 from Indian_Coin_Detection.pipeline.stays_01_data_ingestion import DataIngestionTrainingPipeline
+from Indian_Coin_Detection.pipeline.stays_02_training import ModelTrainingPipeline
+
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -10,3 +12,16 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
+STAGE_NAME = "Training"
+try: 
+   logger.info(f"*******************")
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_trainer = ModelTrainingPipeline()
+   model_trainer.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+

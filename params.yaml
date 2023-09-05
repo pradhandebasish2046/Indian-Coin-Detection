@@ -1,1 +1,2 @@
-key: val
+IMAGE_SIZE:  640
+EPOCHS: 3

@@ -1,6 +1,7 @@
 from Indian_Coin_Detection.constants import *
 from Indian_Coin_Detection.utils.common import read_yaml, create_directories
-from Indian_Coin_Detection.entity.config_entity import DataIngestionConfig
+from Indian_Coin_Detection.entity.config_entity import (DataIngestionConfig,
+                                                        TrainingConfig)
 
 class ConfigurationManager:
     def __init__(self,
@@ -24,3 +25,24 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+    
+    def get_training_config(self) -> TrainingConfig:
+        training = self.config.training
+        params = self.params # all the parameters present inside params.yaml file
+        yolo_config_file_path_ = self.config.training.yolo_config_file_path
+        create_directories([
+            Path(training.root_dir)
+        ])
+        create_directories([training.trained_model_dir])
+
+        training_config = TrainingConfig(
+            root_dir=Path(training.root_dir),
+            trained_model_dir=Path(training.trained_model_dir),
+            best_weight_path=Path(training.best_weight_path),
+            last_weight_path=Path(training.last_weight_path),
+            yolo_config_file_path=Path(yolo_config_file_path_),
+            params_epochs=params.EPOCHS,
+            params_image_size=params.IMAGE_SIZE
+        )
+
+        return training_config
