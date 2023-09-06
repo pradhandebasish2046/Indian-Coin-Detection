@@ -38,8 +38,6 @@ class ConfigurationManager:
         training_config = TrainingConfig(
             root_dir=Path(training.root_dir),
             trained_model_dir=Path(training.trained_model_dir),
-            best_weight_path=Path(training.best_weight_path),
-            last_weight_path=Path(training.last_weight_path),
             yolo_config_file_path=Path(yolo_config_file_path_),
             params_epochs=params.EPOCHS,
             params_image_size=params.IMAGE_SIZE

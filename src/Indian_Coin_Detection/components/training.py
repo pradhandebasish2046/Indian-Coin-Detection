@@ -19,10 +19,11 @@ class Training:
 
         results = model.train(data=self.config.yolo_config_file_path, 
                               epochs = self.config.params_epochs,
-                              imgsz = self.config.params_image_size)
+                              imgsz = self.config.params_image_size,
+                              project = self.config.trained_model_dir)
         
-        temp_best_weights_path = "/home/debasish/home/Indian-Coin-Detection/runs/detect/train2/weights/best.pt"
-        temp_last_weights_path = "/home/debasish/home/Indian-Coin-Detection/runs/detect/train2/weights/last.pt"
+        # temp_best_weights_path = "/home/debasish/home/Indian-Coin-Detection/runs/detect/train2/weights/best.pt"
+        # temp_last_weights_path = "/home/debasish/home/Indian-Coin-Detection/runs/detect/train2/weights/last.pt"
         
-        self.save_weights(temp_best_weights_path,self.config.best_weight_path)
-        self.save_weights(temp_last_weights_path,self.config.last_weight_path)
+        # self.save_weights(temp_best_weights_path,self.config.best_weight_path)
+        # self.save_weights(temp_last_weights_path,self.config.last_weight_path)

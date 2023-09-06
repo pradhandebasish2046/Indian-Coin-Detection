@@ -30,7 +30,5 @@ prepare_callbacks:
 
 training:
   root_dir: artifacts/training
-  trained_model_dir: artifacts/training/model
-  best_weight_path:  artifacts/training/model/best.pt
-  last_weight_path:  artifacts/training/model/last.pt
+  trained_model_dir: artifacts/training/model/temporary_model
   yolo_config_file_path: yolo_config/yolo_config.yaml
