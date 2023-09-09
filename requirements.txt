@@ -13,4 +13,5 @@ Flask
 Flask-Cors
 boto3
 ultralytics==8.0.171
+streamlit==1.26.0
 -e .
