@@ -6,6 +6,7 @@ from Indian_Coin_Detection.pipeline.predict import PredictionPipeline
 
 import subprocess
 
+#Training the model
 def train_model():
     try:
         subprocess.run(["dvc", "repro"], check=True)
