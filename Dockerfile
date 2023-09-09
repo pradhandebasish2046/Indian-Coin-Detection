@@ -1,10 +1,11 @@
 FROM python:3.10-slim-buster
 
 RUN apt update -y && apt install awscli -y
+RUN apt-get update
 WORKDIR /app
 
 COPY . /app
-RUN pip install -r requirements.txt
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6 unzip -y && pip install -r requirements.txt
 
 EXPOSE 8501
 
