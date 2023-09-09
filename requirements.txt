@@ -11,4 +11,5 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
+boto3
 -e .

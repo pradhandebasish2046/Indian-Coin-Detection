@@ -14,9 +14,10 @@ cannot be changed once they are created.
 @dataclass(frozen=True)
 class DataIngestionConfig:
     root_dir: Path
-    source_URL: str
     local_data_file: Path
     unzip_dir: Path
+    bucket_name: str
+    file_name: str
 
 @dataclass(frozen=True)
 class TrainingConfig:

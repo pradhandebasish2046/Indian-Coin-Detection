@@ -1,6 +1,6 @@
 from Indian_Coin_Detection import logger
-from Indian_Coin_Detection.pipeline.stays_01_data_ingestion import DataIngestionTrainingPipeline
-from Indian_Coin_Detection.pipeline.stays_02_training import ModelTrainingPipeline
+from Indian_Coin_Detection.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
+from Indian_Coin_Detection.pipeline.stage_03_training import ModelTrainingPipeline
 
 
 STAGE_NAME = "Data Ingestion stage"

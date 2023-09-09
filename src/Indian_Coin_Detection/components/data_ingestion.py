@@ -5,23 +5,24 @@ from Indian_Coin_Detection import logger
 from Indian_Coin_Detection.utils.common import  get_size
 from Indian_Coin_Detection.entity.config_entity import DataIngestionConfig
 from pathlib import Path
+import boto3
 
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):
         self.config = config
-
-
     
     def download_file(self):
         if not os.path.exists(self.config.local_data_file):
-            filename, headers = request.urlretrieve(
-                url = self.config.source_URL,
-                filename = self.config.local_data_file
-            )
-            logger.info(f"{filename} download! with following info: \n{headers}")
+            s3 = boto3.client('s3')
+            try:
+                s3.download_file(self.config.bucket_name, 
+                                 self.config.file_name, 
+                                 self.config.local_data_file)
+                logger.info(f"ZIP file downloaded successfully in the directory {self.config.local_data_file} ")
+            except Exception as e:
+                logger.info(f'Error downloading the ZIP file: {e}')
         else:
             logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")  
-
 
     
     def extract_zip_file(self):
