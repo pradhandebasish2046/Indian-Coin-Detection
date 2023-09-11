@@ -8,6 +8,14 @@ stages:
       - artifacts/data_ingestion/coin-data-small
 
 
+  data_validation:
+    cmd: python src/Indian_Coin_Detection/pipeline/stage_02_data_validation.py
+    deps:
+      - src/Indian_Coin_Detection/pipeline/stage_02_data_validation.py
+      - config/config.yaml
+    outs:
+      - artifacts/data_validation/
+
 
   training:
     cmd: python src/Indian_Coin_Detection/pipeline/stage_03_training.py

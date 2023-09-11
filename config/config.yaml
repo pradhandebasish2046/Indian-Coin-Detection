@@ -12,7 +12,11 @@ data_ingestion:
 
 data_validation:
   root_dir: artifacts/data_validation
-  final_data_dir: artifacts/data_validation
+  unzip_data_dir: artifacts/data_ingestion/coin-data-small
+  STATUS_FILE: artifacts/data_validation/status.txt
+  data_validation_req_dir_1 : ["images","labels"]
+  data_validation_req_dir_2 : ["train", "valid"]
+  yolo_config_file_path: yolo_config/yolo_config.yaml
 
 
 

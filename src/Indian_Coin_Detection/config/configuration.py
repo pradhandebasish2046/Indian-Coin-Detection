@@ -1,6 +1,7 @@
 from Indian_Coin_Detection.constants import *
 from Indian_Coin_Detection.utils.common import read_yaml, create_directories
 from Indian_Coin_Detection.entity.config_entity import (DataIngestionConfig,
+                                                        DataValidationConfig,
                                                         TrainingConfig)
 
 class ConfigurationManager:
@@ -26,6 +27,20 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+    
+    def get_data_validation_config(self) -> DataValidationConfig:
+        config = self.config.data_validation
+
+        data_validation_config = DataValidationConfig(
+            root_dir=config.root_dir,
+            STATUS_FILE=config.STATUS_FILE,
+            unzip_data_dir = config.unzip_data_dir,
+            data_validation_req_dir_1 = config.data_validation_req_dir_1,
+            data_validation_req_dir_2 = config.data_validation_req_dir_2,
+            yolo_config_file_path = config.yolo_config_file_path
+        )
+
+        return data_validation_config
     
     def get_training_config(self) -> TrainingConfig:
         training = self.config.training

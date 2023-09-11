@@ -18,7 +18,7 @@ class DataIngestionTrainingPipeline:
             
             config = ConfigurationManager() #First initializing the configuration manager
             data_ingestion_config = config.get_data_ingestion_config()
-            #Calling the components which takes dataingestjion config as input
+            #Calling the components which takes dataingestion config as input
             data_ingestion = DataIngestion(config=data_ingestion_config) 
             data_ingestion.download_file()
             data_ingestion.extract_zip_file()
