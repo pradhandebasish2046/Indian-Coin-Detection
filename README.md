@@ -15,10 +15,17 @@
 
 
 ## Project Archietecture
-
+![Project Archietecture](https://github.com/pradhandebasish2046/Indian-Coin-Detection/assets/84903046/569a365d-d1cb-4739-bf22-d7e2945e6c77)
 
 
 ## Deployment Archietecture
+![Deployment Archietecture](https://github.com/pradhandebasish2046/Indian-Coin-Detection/assets/84903046/1437f42d-37a7-48d5-866f-f86f77214348)
+
+
+
+## File Structure
+![File structure](https://github.com/pradhandebasish2046/Indian-Coin-Detection/assets/84903046/53d2c74c-3ee5-4644-9819-8ec101da13e3)
+
 
 
 # How to run?
