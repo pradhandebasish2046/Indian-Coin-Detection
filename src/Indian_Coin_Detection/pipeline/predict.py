@@ -78,13 +78,13 @@ class PredictionPipeline:
 
         output_img,output_data = self.get_prediction_data(result,img,self.threshold)
 
-        # scale_percent = 70 # percent of original size
-        # width = int(img.shape[1] * scale_percent / 100)
-        # height = int(img.shape[0] * scale_percent / 100)
-        # dim = (width, height)
+        scale_percent = 50 # percent of original size
+        width = int(img.shape[1] * scale_percent / 100)
+        height = int(img.shape[0] * scale_percent / 100)
+        dim = (width, height)
 
-        # # resize image
-        # resized_output_img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+        # resize image
+        resized_output_img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
 
         # cv2.imwrite('temp1.jpg',resized_output_img)
         # cv2.imwrite('temp2.jpg',output_img)
@@ -101,7 +101,7 @@ class PredictionPipeline:
         #prediction = len(result.boxes)
         #return [{ "image" : prediction}]
 
-        return prediction,output_img
+        return prediction,resized_output_img
 
     
 STAGE_NAME = "Prediction"
