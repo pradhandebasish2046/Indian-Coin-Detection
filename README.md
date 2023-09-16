@@ -1,7 +1,11 @@
 # Indian-Coin-Detection
 
 
+https://github.com/pradhandebasish2046/Indian-Coin-Detection/assets/84903046/6bc277bc-8c14-4ed9-99ac-c6dff56ce8b0
+
+
 ## Workflows
+
 
 1. Update config.yaml
 2. Update secrets.yaml [Optional]
