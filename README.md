@@ -1,7 +1,10 @@
 # Indian-Coin-Detection
 
 
-https://github.com/pradhandebasish2046/Indian-Coin-Detection/assets/84903046/6bc277bc-8c14-4ed9-99ac-c6dff56ce8b0
+
+https://github.com/pradhandebasish2046/Indian-Coin-Detection/assets/84903046/e0a4a1a0-1f85-49f8-bdc7-7d001a5ba25b
+
+
 
 
 ## Workflows
