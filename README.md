@@ -1,6 +1,15 @@
 # Indian-Coin-Detection
 
 
+# Linkedin
+linkedin.com/in/pradhan-debasish
+# Email
+pradhandebasish2046@gmail.com
+
+
+
+
+
 # Dataset 
 https://www.kaggle.com/datasets/pradhandebasish/indian-coin-detection
 
